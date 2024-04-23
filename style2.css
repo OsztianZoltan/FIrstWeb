@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Mono", monospace;
+}
+.tab{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+header{
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+figure{
+    padding: 10px;
+}
+figure img{
+    width: 100px;
+}
+nav .menu{
+    display: flex;
+    justify-content: space-around;
+}
+nav .menu li{
+    color: blueviolet;
+    margin: 0 10px;
+    list-style-type:none;
+}
+section .background-img{
+    width: 100%;
+    overflow: hidden;
+}
+
+section .background-img img{
+    width: 100%;
+}
+h1{
+    font-size: 3rem;
+    font-style: oblique;
+    color: goldenrod;
+}
+h2{
+    font-size: 2rem;
+    text-shadow: 2cm;
+    font-family: "Rokkitt", serif;
+    color: blueviolet;
+}
+.main-menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.main-info{
+    position: absolute;
+    top:70%;
+    text-align: center;
+}
+section.background{
+    width: 100%;
+    overflow: hidden;
+}
+.main-info .buttones button{
+    border: none;
+    border-radius: 3px;
+    background-color:blueviolet;
+    color: black;
+    margin: 10px 20px 0px 10px;
+    padding: 10px 50px;
+    font-weight: bold;
+}
+.main-info .buttones button:hover{
+    border: none;
+    border-radius: 3px;
+    background-color:goldenrod;
+    color: black;
+    margin: 10px 20px 0px 10px;
+    padding: 10px 50px;
+    font-weight: bold;
+}
+.infok{
+    width: 100%;
+    padding: 20px 20px;
+    text-align: center;
+    font-style:italic;
+}
+.infok h3{
+    font-size: 2rem;
+    color:goldenrod;
+    font-style:oblique;
+}
+.infok p{
+    color: black ;
+    font-size: 1rem;
+    font-family: "Ramabhadra", sans-serif;
+    font-weight: bold;
+    text-decoration:underline;
+}
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:goldenrod;
+}
+footer .search{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 50px;
+    padding: 20px;
+}
+footer .social ul{
+    list-style-type: none;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+footer .social ul li a{
+    margin: 10px;
+    color: white;
+    font-size: 2rem;
+}
+.infok video{
+    margin: 15px 0 0 0 ;
+    overflow: hidden;
+    padding: 0px 0 0 0;
+}
+@media (max-width: 1024px){
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    header{
+        margin: 0 auto;
+        height: auto;
+        display: block;
+    }
+    figure{
+        width: 100%;
+        text-align: center;
+
+    }
+    .main-info{
+        position: static;
+        color: black;
+    }
+    nav .menu{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .main-info .buttones button{
+        padding: 10px 50px;
+        margin-top: 2rem;
+        color:black;
+        background-color: rgb(155, 12, 136);
+        font-weight: bold;
+        border: none;
+        border-radius: 3px;
+    }
+    .main-menu{
+        position: static;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+    .main-info h1, .main-info h2{
+        color: black;
+    }
+    .infok h2{
+        size: 2rem;
+        justify-content: space-around;
+    }
+    footer{
+        background-color: black;
+        color: darkmagenta;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+    .infok{
+        margin: 0;
+    }
+    .infok video{
+        flex-direction: column;
+        position: static;
+    }
+    .tab{
+        position: static;
+        width: 100%;
+        z-index: 1;
+        margin: 0;
+        padding: 0;
+    }
+    .background-img{
+        margin: 0;
+        padding: 0;
+    }
+    .social h3{
+        text-align: center;
+    }
+}
+.search button{
+    font-size: 0.7rem;
+    padding: 2px 10px;
+}
